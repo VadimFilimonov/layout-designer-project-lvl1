@@ -33,7 +33,9 @@ h1 {
   line-height: 1.2em;
 }
 
-h2 {
+.section-title {
+  margin: 0 0 30px;
+
   font-size: 60px;
   font-family: var(--font-title);
   line-height: 1.2em;
@@ -78,6 +80,18 @@ section {
   content: '';
 }
 
+.section-has-no-bg::before {
+  content: none;
+}
+
+.section-is-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
 .section-content {
   max-width: 1100px;
   margin: 0 auto;
@@ -111,4 +125,8 @@ section {
 
   column-gap: 30px;
   row-gap: 20px;
+}
+
+.video {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
