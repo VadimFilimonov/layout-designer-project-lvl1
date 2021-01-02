@@ -99,6 +99,10 @@ body {
   gap: 30px;
 }
 
+.section-has-distortion:nth-child(even) .distortion {
+  flex-direction: row-reverse;
+}
+
 .distortion-body::before {
   display: block;
 
