@@ -71,7 +71,7 @@ body {
 
 .columns-title {
   box-sizing: border-box;
-  margin: 0 0 25px;
+  margin: 0 0 20px;
   padding: 5px 10px;
 
   color: var(--color-white);
@@ -99,6 +99,14 @@ body {
   gap: 30px;
 }
 
-.distortion-image {
-  min-width: 580px;
+.distortion-body::before {
+  display: block;
+
+  color: var(--color-translucent-dark);
+  font-weight: 400;
+  font-size: 24px;
+  font-family: var(--font-title);
+  line-height: 1.2;
+
+  content: "Когнитивные искажения";
 }

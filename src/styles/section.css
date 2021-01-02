@@ -52,17 +52,6 @@
   font-size: 52px;
 }
 
-.section-has-distortion .section-title::before {
-  display: block;
-
-  color: var(--color-translucent-dark);
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1.2;
-
-  content: "Когнитивные искажения";
-}
-
 .section-text {
   color: var(--color-dark);
   font-size: 34px;
