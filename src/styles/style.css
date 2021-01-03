@@ -30,6 +30,7 @@ body {
 .page-title {
   margin: 0 0 185px;
 
+  font-weight: 400;
   font-size: 72px;
   font-family: var(--font-title);
   line-height: 1.2em;
