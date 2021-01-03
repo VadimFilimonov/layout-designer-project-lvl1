@@ -46,7 +46,7 @@ body {
 
 .button {
   display: inline-block;
-  margin-top: 25px;
+  margin-top: 40px;
   margin-left: calc(50% + 15px);
   padding: 12px 24px;
 
@@ -72,6 +72,10 @@ body {
 
 .columns p {
   margin-top: 0;
+}
+
+.columns p:last-child {
+  margin-bottom: 0;
 }
 
 .columns-title {
