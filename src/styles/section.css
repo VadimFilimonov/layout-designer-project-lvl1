@@ -98,6 +98,7 @@
   color: var(--color-dark);
   font-size: 34px;
   font-family: var(--font-title);
+  line-height: 1.2;
 }
 
 .section-has-distortion:nth-child(even) .section-text {

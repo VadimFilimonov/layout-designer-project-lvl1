@@ -61,6 +61,7 @@ body {
 
 .columns {
   margin-top: 100px;
+  break-inside: avoid;
 
   columns: 2;
   column-gap: 30px;
@@ -71,7 +72,9 @@ body {
 }
 
 .columns p {
+  display: flex;
   margin-top: 0;
+  break-inside: avoid;
 }
 
 .columns p:last-child {
@@ -114,6 +117,10 @@ body {
 .distortion {
   display: flex;
   gap: 30px;
+}
+
+.distortion img {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
 .section-has-distortion:nth-child(even) .distortion {
