@@ -97,6 +97,8 @@
 }
 
 .section-text {
+  margin: 0;
+
   color: var(--color-dark);
   font-size: 34px;
   font-family: var(--font-title);
