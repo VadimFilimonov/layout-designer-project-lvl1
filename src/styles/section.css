@@ -81,6 +81,14 @@
   font-size: 52px;
 }
 
+.subscriber .section-title {
+  margin: 0;
+
+  color: var(--color-white);
+  font-weight: 400;
+  font-size: 34px;
+}
+
 .section-has-distortion:nth-child(even) .section-title {
   color: var(--color-white);
 }

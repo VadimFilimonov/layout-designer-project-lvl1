@@ -128,3 +128,87 @@ body {
 .section-has-distortion:nth-child(even) .distortion-body::before {
   color: var(--color-translucent-white);
 }
+
+.footer {
+  padding: 100px 0;
+}
+
+.subscriber {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 55px;
+
+  background-color: var(--color-main-dark);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+}
+
+.form-label {
+  margin: 0 0 10px;
+
+  color: var(--color-white);
+  font-size: 18px;
+}
+
+.form-control {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+}
+
+.form-input {
+  box-sizing: border-box;
+  width: calc(100% - 70px);
+  height: 50px;
+  padding: 15px;
+
+  border: 0;
+}
+
+.form-submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 70px;
+  height: 50px;
+
+  background-color: var(--color-main);
+  border: 0;
+  cursor: pointer;
+}
+
+.form-submit::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 24px;
+  height: 24px;
+  margin-top: -12px;
+  margin-left: -12px;
+
+  background-image: url('../images/send.svg');
+
+  content: "";
+}
+
+.form-privacy {
+  color: var(--color-white);
+  font-size: 12px;
+}
+
+.form-link {
+  color: var(--color-white);
+}
