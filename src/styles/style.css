@@ -63,6 +63,10 @@ h3 {
   font-size: 34px;
 }
 
+a {
+  color: inherit;
+}
+
 header img {
   position: absolute;
   top: 55px;
