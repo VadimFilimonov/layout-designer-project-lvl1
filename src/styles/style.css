@@ -81,6 +81,10 @@ header img {
   height: 525px;
 }
 
+footer {
+  padding: 100px 0;
+}
+
 /* Background */
 
 .background {
@@ -152,7 +156,6 @@ header img {
 /* Contacts */
 
 .contacts {
-  width: 100%;
   margin: 74px 0 0;
 
   font-size: 14px;
@@ -225,7 +228,8 @@ header img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
   padding: 40px 55px;
 
   background-color: var(--color-main-dark);
