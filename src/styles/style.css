@@ -31,7 +31,7 @@ body {
   position: relative;
   z-index: 1;
 
-  margin: 0 0 190px;
+  margin: 0 0 200px;
 
   font-weight: 400;
   font-size: 72px;
@@ -75,7 +75,6 @@ body {
 }
 
 .columns p {
-  display: flex;
   margin-top: 0;
   break-inside: avoid;
 }
