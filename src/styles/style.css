@@ -79,6 +79,7 @@ body {
   break-inside: avoid;
 }
 
+.columns p:first-child,
 .columns p:last-child {
   margin-bottom: 0;
 }
