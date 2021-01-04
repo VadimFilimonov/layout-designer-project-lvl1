@@ -1,5 +1,9 @@
 .section {
   position: relative;
+
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 100px 0;
 }
 
 .section-is-centered {
@@ -61,14 +65,6 @@
 .section-has-no-bg::before,
 .section-has-no-bg::after {
   background: none;
-}
-
-.section-content {
-  position: relative;
-
-  max-width: 1110px;
-  margin: 0 auto;
-  padding: 100px 0;
 }
 
 .section h2 + p {
