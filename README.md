@@ -20,3 +20,9 @@ $ make install
 ```sh
 make lint
 ```
+
+## Run
+
+```sh
+make develop
+```

@@ -5,6 +5,7 @@
   "main": "",
   "dependencies": {},
   "devDependencies": {
+    "browser-sync": "^2.26.13",
     "htmlhint": "^0.14.2",
     "stylelint": "^13.7.2",
     "stylelint-config-rational-order": "^0.1.2",
