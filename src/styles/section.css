@@ -77,11 +77,14 @@
   margin: 0 0 30px;
 }
 
-.cards .section-title {
+.cards h2 {
   margin: 0;
 
-  color: var(--color-white);
   font-size: 52px;
+}
+
+.cards h2 span {
+  color: var(--color-white);
 }
 
 .subscriber .section-title {
@@ -89,6 +92,10 @@
 
   color: var(--color-white);
   font-size: 34px;
+}
+
+.section-has-distortion:nth-child(odd) .section-title {
+  color: var(--color-dark);
 }
 
 .section-has-distortion:nth-child(even) .section-title {

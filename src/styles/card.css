@@ -41,7 +41,7 @@
 }
 
 .card-link {
-  color: var(--color-main);
+  color: currentColor;
   text-decoration: none;
 }
 

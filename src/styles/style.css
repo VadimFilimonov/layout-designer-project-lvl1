@@ -30,6 +30,7 @@ body {
 h1,
 h2,
 h3 {
+  color: var(--color-main);
   font-weight: 400;
   font-family: var(--font-title);
   line-height: 1.2em;
@@ -38,7 +39,7 @@ h3 {
 h1 span,
 h2 span,
 h3 span {
-  color: var(--color-main);
+  color: var(--color-dark);
 }
 
 h1 {
@@ -100,8 +101,8 @@ h3 {
   break-inside: avoid;
 }
 
-.columns p:first-child,
-.columns p:last-child {
+.columns p:first-of-type,
+.columns p:last-of-type {
   margin-bottom: 0;
 }
 
@@ -250,7 +251,7 @@ h3 {
 }
 
 .contacts {
-  margin: 76px 0 0;
+  margin: 74px 0 0;
 
   font-size: 14px;
   text-align: center;
