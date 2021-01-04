@@ -35,9 +35,7 @@
 .card-title {
   margin: 0 0 16px;
 
-  font-weight: 400;
   font-size: 34px;
-  font-family: var(--font-title);
 
   line-height: 1.2em;
 }

@@ -27,16 +27,37 @@ body {
   line-height: 1.6em;
 }
 
+h1,
+h2,
+h3 {
+  font-weight: 400;
+  font-family: var(--font-title);
+  line-height: 1.2em;
+}
+
+h1 span,
+h2 span,
+h3 span {
+  color: var(--color-main);
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
 .page-title {
   position: relative;
   z-index: 1;
 
   margin: 0 0 200px;
-
-  font-weight: 400;
-  font-size: 72px;
-  font-family: var(--font-title);
-  line-height: 1.2em;
 }
 
 .page-image {
@@ -91,7 +112,9 @@ body {
 
   color: var(--color-white);
 
+  font-weight: 700;
   font-size: 14px;
+  font-family: var(--color-main);
   line-height: 1.2;
   text-transform: uppercase;
   column-span: all;
@@ -103,10 +126,6 @@ body {
   color: var(--color-brown);
 
   background-color: var(--color-white);
-}
-
-.highlight {
-  color: var(--color-main);
 }
 
 .video {

@@ -71,11 +71,6 @@
   position: relative;
 
   margin: 0 0 30px;
-
-  font-weight: 400;
-  font-size: 60px;
-  font-family: var(--font-title);
-  line-height: 1.2em;
 }
 
 .cards .section-title {
