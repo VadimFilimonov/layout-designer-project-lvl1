@@ -14,6 +14,8 @@
   --color-blue: #1085c5;
   --font-main: 'Open Sans', sans-serif;
   --font-title: 'Neucha', cursive;
+  --section-width: 1110px;
+  --window-width: 1440px;
 }
 
 body {
@@ -192,7 +194,7 @@ header img {
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
-  max-width: 1110px;
+  max-width: var(--section-width);
   margin: 0 auto;
   padding: 40px 55px;
 
