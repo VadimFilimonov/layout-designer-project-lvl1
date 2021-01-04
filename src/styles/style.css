@@ -12,10 +12,12 @@
   --color-translucent-dark: #908d8b;
   --color-brown: #b09a81;
   --color-blue: #1085c5;
-  --font-main: 'Open Sans', sans-serif;
-  --font-title: 'Neucha', cursive;
-  --section-width: 1110px;
-  --window-width: 1440px;
+  --font-main: "Open Sans", sans-serif;
+  --font-title: "Neucha", cursive;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -28,11 +30,15 @@ body {
 
   font-family: var(--font-main);
   line-height: 1.6em;
+
+  counter-reset: navigation;
 }
 
 h1,
 h2,
 h3 {
+  margin: 0;
+
   color: var(--color-main);
   font-weight: 400;
   font-family: var(--font-title);
@@ -54,14 +60,10 @@ h1 {
 }
 
 h2 {
-  margin: 0;
-
   font-size: 60px;
 }
 
 h3 {
-  margin: 0;
-
   font-size: 34px;
 }
 
@@ -78,6 +80,55 @@ header img {
 
   height: 525px;
 }
+
+/* Background */
+
+.background {
+  position: relative;
+}
+
+.background::before,
+.background::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  content: "";
+}
+
+.background::before {
+  z-index: -1;
+
+  opacity: 0.1;
+}
+
+.background::after {
+  z-index: -2;
+}
+
+.background-image::before {
+  background-image: url("../images/background.png");
+}
+
+.background-color-light::after {
+  background-color: var(--color-light);
+}
+
+.background-color-dark::after {
+  background-color: var(--color-main-dark);
+}
+
+.background-color-brown::after {
+  background-color: var(--color-brown);
+}
+
+/* Button */
 
 .button {
   display: inline-block;
@@ -97,6 +148,22 @@ header img {
 .button:hover {
   background-color: #ea7600;
 }
+
+/* Contacts */
+
+.contacts {
+  width: 100%;
+  margin: 74px 0 0;
+
+  font-size: 14px;
+  text-align: center;
+}
+
+.contacts a {
+  color: var(--color-blue);
+}
+
+/* Columns */
 
 .columns {
   margin-top: 100px;
@@ -144,47 +211,21 @@ header img {
   background-color: var(--color-white);
 }
 
+/* Video */
+
 .video {
   margin-bottom: -200px;
 
   border: 0;
 }
 
-.filter {
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
-}
-
-.flex-1 {
-  flex: 1;
-}
-
-.subtitle {
-  display: block;
-
-  color: var(--color-translucent-dark);
-  font-weight: 400;
-  font-size: 24px;
-  font-family: var(--font-title);
-  line-height: 1.2;
-
-  content: "Когнитивные искажения";
-}
-
-.background-color-brown .subtitle {
-  color: var(--color-translucent-white);
-}
-
-.footer {
-  padding: 100px 0;
-}
+/* Subscriber */
 
 .subscriber {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-sizing: border-box;
-  max-width: var(--section-width);
-  margin: 0 auto;
+  width: 100%;
   padding: 40px 55px;
 
   background-color: var(--color-main-dark);
@@ -194,58 +235,41 @@ header img {
   color: var(--color-white);
 }
 
-.contacts {
-  margin: 74px 0 0;
+/* Subtitle */
 
-  font-size: 14px;
-  text-align: center;
+.subtitle {
+  color: var(--color-translucent-dark);
+  font-size: 24px;
+  font-family: var(--font-title);
+  line-height: 1.2;
 }
 
-.contacts a {
-  color: var(--color-blue);
+.background-color-brown .subtitle {
+  color: var(--color-translucent-white);
 }
 
-.background {
-  position: relative;
+/* Atomic */
+
+.color-white {
+  color: var(--color-white);
 }
 
-.background::before,
-.background::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
-
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  content: "";
+.flex-1 {
+  flex: 1;
 }
 
-.background::before {
-  z-index: -1;
-
-  opacity: 0.1;
+.filter {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
-.background::after {
-  z-index: -2;
+.font-size-52 {
+  font-size: 52px;
 }
 
-.background-image::before {
-  background-image: url("../images/background.png");
+.pt-200 {
+  padding-top: 200px;
 }
 
-.background-color-light::after {
-  background-color: var(--color-light);
-}
-
-.background-color-dark::after {
-  background-color: var(--color-main-dark);
-}
-
-.background-color-brown::after {
-  background-color: var(--color-brown);
+.row-gap-20 {
+  row-gap: 20px;
 }

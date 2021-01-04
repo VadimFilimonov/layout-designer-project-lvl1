@@ -1,18 +1,8 @@
-.cards {
-  counter-reset: navigation;
-  row-gap: 20px;
-}
-
-.section.cards {
-  align-items: stretch;
-  padding-top: 200px;
-}
-
 .card {
   position: relative;
 
-  box-sizing: border-box;
-  width: calc(33% - 20px);
+  align-self: stretch;
+  width: calc((100% / 3) - 20px);
   padding: 24px;
 
   background-color: var(--color-light);
@@ -31,7 +21,6 @@
   margin: 0 0 40px;
 
   color: var(--color-main-dark);
-  font-weight: 400;
   font-size: 64px;
   font-family: var(--font-title);
   line-height: 1;

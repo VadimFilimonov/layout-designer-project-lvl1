@@ -4,7 +4,8 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  max-width: var(--section-width);
+  justify-content: space-between;
+  max-width: 1110px;
   margin: 0 auto;
   padding: 100px 0;
 
@@ -12,30 +13,17 @@
 }
 
 .section-is-centered {
-  display: flex;
   flex-direction: column;
   align-items: center;
 
   text-align: center;
 }
 
-.section h2 + p {
+.section-title {
   margin: 0 0 30px;
 }
 
-.cards h2 {
-  width: calc(33% - 20px);
-
-  margin: 0;
-
-  font-size: 52px;
-}
-
-.cards h2 span {
-  color: var(--color-white);
-}
-
-.section-title {
+.section-title + p {
   margin: 0 0 30px;
 }
 
@@ -47,10 +35,10 @@
   color: var(--color-white);
 }
 
-.background-color-light .section-title + h3 {
+.background-color-light h3 {
   color: var(--color-dark);
 }
 
-.background-color-brown .section-title + h3 {
+.background-color-brown h3 {
   color: var(--color-white);
 }
