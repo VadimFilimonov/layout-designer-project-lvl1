@@ -48,20 +48,20 @@ h3 span {
 h1 {
   position: relative;
 
-  margin: 0 0 201px;
+  margin: 0 0 101px;
 
   font-size: 72px;
 }
 
 h2 {
-  position: relative;
-
   margin: 0;
 
   font-size: 60px;
 }
 
 h3 {
+  margin: 0;
+
   font-size: 34px;
 }
 
@@ -148,24 +148,17 @@ header img {
   margin-bottom: -200px;
 
   border: 0;
+}
 
+.filter {
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
-.distortion {
-  display: flex;
-  gap: 30px;
+.flex-1 {
+  flex: 1;
 }
 
-.distortion h2 {
-  margin: 0 0 30px;
-}
-
-.distortion img {
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
-}
-
-.distortion-body::before {
+.subtitle {
   display: block;
 
   color: var(--color-translucent-dark);
@@ -177,7 +170,7 @@ header img {
   content: "Когнитивные искажения";
 }
 
-.background-color-brown .distortion-body::before {
+.background-color-brown .subtitle {
   color: var(--color-translucent-white);
 }
 
@@ -198,8 +191,6 @@ header img {
 }
 
 .subscriber h3 {
-  margin: 0;
-
   color: var(--color-white);
 }
 
