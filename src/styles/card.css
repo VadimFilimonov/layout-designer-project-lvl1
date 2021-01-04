@@ -16,6 +16,14 @@
   padding: 24px;
 
   background-color: var(--color-light);
+
+  transition: 0.2s;
+}
+
+.card:hover {
+  color: var(--color-white);
+
+  background-color: var(--color-main);
 }
 
 .card::before {
@@ -28,12 +36,22 @@
   font-family: var(--font-title);
   line-height: 1;
 
+  transition: 0.2s;
+
   content: counter(navigation);
   counter-increment: navigation;
 }
 
+.card:hover::before {
+  color: var(--color-white);
+}
+
 .card-title {
   margin: 0 0 16px;
+}
+
+.card:hover .card-title {
+  color: var(--color-white);
 }
 
 .card-link {

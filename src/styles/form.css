@@ -41,6 +41,12 @@
   background-color: var(--color-main);
   border: 0;
   cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.form-submit:hover {
+  background-color: #ea7600;
 }
 
 .form-submit::before {
