@@ -4,6 +4,7 @@
 }
 
 .section.cards {
+  align-items: stretch;
   padding-top: 200px;
 }
 

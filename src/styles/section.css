@@ -3,6 +3,7 @@
 
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   max-width: var(--section-width);
   margin: 0 auto;
   padding: 100px 0;
