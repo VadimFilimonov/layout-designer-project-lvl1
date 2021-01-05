@@ -29,7 +29,7 @@ body {
   font-size: 16px;
 
   font-family: var(--font-main);
-  line-height: 1.6em;
+  line-height: 1.6;
 
   counter-reset: navigation;
 }
@@ -42,7 +42,7 @@ h3 {
   color: var(--color-main);
   font-weight: 400;
   font-family: var(--font-title);
-  line-height: 1.2em;
+  line-height: 1.2;
 }
 
 h1 span,
