@@ -25,7 +25,7 @@ body {
   font-size: 16px;
 
   font-family: var(--font-main);
-  line-height: 1.6;
+  line-height: 1.6em;
 
   counter-reset: navigation;
 }
@@ -38,7 +38,7 @@ h3 {
   color: var(--color-main);
   font-weight: 400;
   font-family: var(--font-title);
-  line-height: 1.2;
+  line-height: 1.2em;
 }
 
 h1 span,
@@ -291,6 +291,7 @@ footer {
 
 .form-privacy {
   font-size: 12px;
+  line-height: 1.6;
 }
 
 /* Section */
