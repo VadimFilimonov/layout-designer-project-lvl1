@@ -2,6 +2,7 @@ install:
 	npm install
 
 lint:
+	npx editorconfig-checker
 	npx stylelint ./src/styles/*.css
 	npx htmlhint ./src/*.html
 

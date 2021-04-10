@@ -6,6 +6,7 @@
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.26.13",
+    "editorconfig-checker": "^4.0.2",
     "htmlhint": "^0.14.2",
     "stylelint": "^13.7.2",
     "stylelint-config-rational-order": "^0.1.2",
